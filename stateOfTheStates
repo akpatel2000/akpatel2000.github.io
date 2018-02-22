@@ -1,0 +1,3181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>State of the States</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif,verdana;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<h style="font-size:8vw; border:2px solid DodgerBlue; background-color:yellow;">State of the States</h>
+<p> atul.patel@princetonPointCapital.com <br>Feb 2018</p>
+<body>
+<p style="font-size:4vw"> Change in credit rating of US States -- 2005 to 2017<br></p>
+<p style="font-size:2vw"> The credit rating of most states has improved over that last 13 years, with a few notable exceptions.  However the funding of state pension plans in most states will pose long-term challenges.  It is imperative that long-term investors, as most retail clients are, know both the relative standing and the potential long-term challenges of their municipal bond investment options.  We hope this illustration helps individual investors frame the proper questions for their financial advisors.
+</p>
+
+<!-- GeoChart generated in R 3.4.3 by googleVis 0.6.2 package -->
+<!-- Sun Feb 18 13:25:26 2018 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataGeoChartID169bc154ec () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AA",
+3
+],
+[
+"Arizona",
+"AA",
+3
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"A",
+6
+],
+[
+"Colorado",
+"AA-",
+4
+],
+[
+"Connecticut",
+"AA",
+3
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA-",
+4
+],
+[
+"Idaho",
+"AA",
+3
+],
+[
+"Illinois",
+"AA",
+3
+],
+[
+"Indiana",
+"AA",
+3
+],
+[
+"Iowa",
+"AA+",
+2
+],
+[
+"Kansas",
+"AA+",
+2
+],
+[
+"Kentucky",
+"AA-",
+4
+],
+[
+"Louisiana",
+"A",
+6
+],
+[
+"Maine",
+"AA-",
+4
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA",
+3
+],
+[
+"Michigan",
+"AA",
+3
+],
+[
+"Minnesota",
+"AAA",
+1
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA-",
+4
+],
+[
+"Nebraska",
+"AA+",
+2
+],
+[
+"Nevada",
+"AA",
+3
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"AA",
+3
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA",
+3
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AA",
+3
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA",
+3
+],
+[
+"Oregon",
+"AA-",
+4
+],
+[
+"Pennsylvania",
+"AA",
+3
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"N/A",
+null
+],
+[
+"Tennessee",
+"AA",
+3
+],
+[
+"Texas",
+"AA",
+3
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA",
+3
+],
+[
+"West Virginia",
+"AA-",
+4
+],
+[
+"Wisconsin",
+"AA-",
+4
+],
+[
+"Wyoming",
+"AA",
+3
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID16912d998d7 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AA",
+3
+],
+[
+"Arizona",
+"AA",
+3
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"A+",
+5
+],
+[
+"Colorado",
+"AA",
+3
+],
+[
+"Connecticut",
+"AA",
+3
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA",
+3
+],
+[
+"Idaho",
+"AA",
+3
+],
+[
+"Illinois",
+"AA",
+3
+],
+[
+"Indiana",
+"AA+",
+2
+],
+[
+"Iowa",
+"AA+",
+2
+],
+[
+"Kansas",
+"AA+",
+2
+],
+[
+"Kentucky",
+"AA-",
+4
+],
+[
+"Louisiana",
+"A",
+6
+],
+[
+"Maine",
+"AA",
+3
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA",
+3
+],
+[
+"Michigan",
+"AA-",
+4
+],
+[
+"Minnesota",
+"AAA",
+1
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA-",
+4
+],
+[
+"Nebraska",
+"AA+",
+2
+],
+[
+"Nevada",
+"AA+",
+2
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"AA",
+3
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA",
+3
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AA",
+3
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA",
+3
+],
+[
+"Oregon",
+"AA",
+3
+],
+[
+"Pennsylvania",
+"AA",
+3
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"AA",
+3
+],
+[
+"Tennessee",
+"AA+",
+2
+],
+[
+"Texas",
+"AA",
+3
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA+",
+2
+],
+[
+"West Virginia",
+"AA-",
+4
+],
+[
+"Wisconsin",
+"AA-",
+4
+],
+[
+"Wyoming",
+"AA",
+3
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID1695e9ee919 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AA+",
+2
+],
+[
+"Arizona",
+"AA-",
+4
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"A",
+6
+],
+[
+"Colorado",
+"AA",
+3
+],
+[
+"Connecticut",
+"AA",
+3
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA",
+3
+],
+[
+"Idaho",
+"AA",
+3
+],
+[
+"Illinois",
+"A+",
+5
+],
+[
+"Indiana",
+"AAA",
+1
+],
+[
+"Iowa",
+"AAA",
+1
+],
+[
+"Kansas",
+"AA+",
+2
+],
+[
+"Kentucky",
+"AA-",
+4
+],
+[
+"Louisiana",
+"AA-",
+4
+],
+[
+"Maine",
+"AA",
+3
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA",
+3
+],
+[
+"Michigan",
+"AA-",
+4
+],
+[
+"Minnesota",
+"AAA",
+1
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA",
+3
+],
+[
+"Nebraska",
+"AA+",
+2
+],
+[
+"Nevada",
+"AA+",
+2
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"AA",
+3
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA",
+3
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AA+",
+2
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA+",
+2
+],
+[
+"Oregon",
+"AA",
+3
+],
+[
+"Pennsylvania",
+"AA",
+3
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"AA",
+3
+],
+[
+"Tennessee",
+"AA+",
+2
+],
+[
+"Texas",
+"AA+",
+2
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA+",
+2
+],
+[
+"West Virginia",
+"AA",
+3
+],
+[
+"Wisconsin",
+"AA",
+3
+],
+[
+"Wyoming",
+"AA+",
+2
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID169f13d372 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AA+",
+2
+],
+[
+"Arizona",
+"AA-",
+4
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"A-",
+7
+],
+[
+"Colorado",
+"AA",
+3
+],
+[
+"Connecticut",
+"AA",
+3
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA",
+3
+],
+[
+"Idaho",
+"AA+",
+2
+],
+[
+"Illinois",
+"A+",
+5
+],
+[
+"Indiana",
+"AAA",
+1
+],
+[
+"Iowa",
+"AAA",
+1
+],
+[
+"Kansas",
+"AA+",
+2
+],
+[
+"Kentucky",
+"AA-",
+4
+],
+[
+"Louisiana",
+"AA",
+3
+],
+[
+"Maine",
+"AA",
+3
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA",
+3
+],
+[
+"Michigan",
+"AA-",
+4
+],
+[
+"Minnesota",
+"AAA",
+1
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA",
+3
+],
+[
+"Nebraska",
+"AAA",
+1
+],
+[
+"Nevada",
+"AA",
+3
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"AA-",
+4
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA",
+3
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AA+",
+2
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA+",
+2
+],
+[
+"Oregon",
+"AA+",
+2
+],
+[
+"Pennsylvania",
+"AA",
+3
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"AA+",
+2
+],
+[
+"Tennessee",
+"AA+",
+2
+],
+[
+"Texas",
+"AA+",
+2
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA+",
+2
+],
+[
+"West Virginia",
+"AA",
+3
+],
+[
+"Wisconsin",
+"AA",
+3
+],
+[
+"Wyoming",
+"AAA",
+1
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID1695d7c5a69 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AAA",
+1
+],
+[
+"Arizona",
+"AA-",
+4
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"A",
+6
+],
+[
+"Colorado",
+"AA",
+3
+],
+[
+"Connecticut",
+"AA",
+3
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA",
+3
+],
+[
+"Idaho",
+"AA+",
+2
+],
+[
+"Illinois",
+"A-",
+7
+],
+[
+"Indiana",
+"AAA",
+1
+],
+[
+"Iowa",
+"AAA",
+1
+],
+[
+"Kansas",
+"AA+",
+2
+],
+[
+"Kentucky",
+"AA-",
+4
+],
+[
+"Louisiana",
+"AA",
+3
+],
+[
+"Maine",
+"AA",
+3
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA+",
+2
+],
+[
+"Michigan",
+"AA-",
+4
+],
+[
+"Minnesota",
+"AA+",
+2
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA",
+3
+],
+[
+"Nebraska",
+"AAA",
+1
+],
+[
+"Nevada",
+"AA",
+3
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"AA-",
+4
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA",
+3
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AAA",
+1
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA+",
+2
+],
+[
+"Oregon",
+"AA+",
+2
+],
+[
+"Pennsylvania",
+"AA",
+3
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"AA+",
+2
+],
+[
+"Tennessee",
+"AA+",
+2
+],
+[
+"Texas",
+"AAA",
+1
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA+",
+2
+],
+[
+"West Virginia",
+"AA",
+3
+],
+[
+"Wisconsin",
+"AA",
+3
+],
+[
+"Wyoming",
+"AAA",
+1
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID169842dc0b () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AAA",
+1
+],
+[
+"Arizona",
+"AA",
+3
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"AA-",
+4
+],
+[
+"Colorado",
+"AA",
+3
+],
+[
+"Connecticut",
+"AA",
+3
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA",
+3
+],
+[
+"Idaho",
+"AA+",
+2
+],
+[
+"Illinois",
+"A-",
+7
+],
+[
+"Indiana",
+"AAA",
+1
+],
+[
+"Iowa",
+"AAA",
+1
+],
+[
+"Kansas",
+"AA",
+3
+],
+[
+"Kentucky",
+"A+",
+5
+],
+[
+"Louisiana",
+"AA",
+3
+],
+[
+"Maine",
+"AA",
+3
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA+",
+2
+],
+[
+"Michigan",
+"AA-",
+4
+],
+[
+"Minnesota",
+"AA+",
+2
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA",
+3
+],
+[
+"Nebraska",
+"AAA",
+1
+],
+[
+"Nevada",
+"AA",
+3
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"A",
+6
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA+",
+2
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AAA",
+1
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA+",
+2
+],
+[
+"Oregon",
+"AA+",
+2
+],
+[
+"Pennsylvania",
+"AA-",
+4
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"AAA",
+1
+],
+[
+"Tennessee",
+"AA+",
+2
+],
+[
+"Texas",
+"AAA",
+1
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA+",
+2
+],
+[
+"West Virginia",
+"AA",
+3
+],
+[
+"Wisconsin",
+"AA",
+3
+],
+[
+"Wyoming",
+"AAA",
+1
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID1693d2213d0 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA",
+3
+],
+[
+"Alaska",
+"AA",
+3
+],
+[
+"Arizona",
+"AA",
+3
+],
+[
+"Arkansas",
+"AA",
+3
+],
+[
+"California",
+"AA-",
+4
+],
+[
+"Colorado",
+"AA",
+3
+],
+[
+"Connecticut",
+"AA-",
+4
+],
+[
+"Delaware",
+"AAA",
+1
+],
+[
+"Florida",
+"AAA",
+1
+],
+[
+"Georgia",
+"AAA",
+1
+],
+[
+"Hawaii",
+"AA+",
+2
+],
+[
+"Idaho",
+"AA+",
+2
+],
+[
+"Illinois",
+"BBB-",
+10
+],
+[
+"Indiana",
+"AAA",
+1
+],
+[
+"Iowa",
+"AAA",
+1
+],
+[
+"Kansas",
+"AA-",
+4
+],
+[
+"Kentucky",
+"A+",
+5
+],
+[
+"Louisiana",
+"AA",
+3
+],
+[
+"Maine",
+"AA",
+3
+],
+[
+"Maryland",
+"AAA",
+1
+],
+[
+"Massachusetts",
+"AA+",
+2
+],
+[
+"Michigan",
+"AA-",
+4
+],
+[
+"Minnesota",
+"AA+",
+2
+],
+[
+"Mississippi",
+"AA",
+3
+],
+[
+"Missouri",
+"AAA",
+1
+],
+[
+"Montana",
+"AA",
+3
+],
+[
+"Nebraska",
+"AAA",
+1
+],
+[
+"Nevada",
+"AA",
+3
+],
+[
+"New Hampshire",
+"AA",
+3
+],
+[
+"New Jersey",
+"A-",
+7
+],
+[
+"New Mexico",
+"AA+",
+2
+],
+[
+"New York",
+"AA+",
+2
+],
+[
+"North Carolina",
+"AAA",
+1
+],
+[
+"North Dakota",
+"AA+",
+2
+],
+[
+"Ohio",
+"AA+",
+2
+],
+[
+"Oklahoma",
+"AA+",
+2
+],
+[
+"Oregon",
+"AA+",
+2
+],
+[
+"Pennsylvania",
+"AA-",
+4
+],
+[
+"Rhode Island",
+"AA",
+3
+],
+[
+"South Carolina",
+"AA+",
+2
+],
+[
+"South Dakota",
+"AAA",
+1
+],
+[
+"Tennessee",
+"AAA",
+1
+],
+[
+"Texas",
+"AAA",
+1
+],
+[
+"Utah",
+"AAA",
+1
+],
+[
+"Vermont",
+"AA+",
+2
+],
+[
+"Virginia",
+"AAA",
+1
+],
+[
+"Washington",
+"AA+",
+2
+],
+[
+"West Virginia",
+"AA-",
+4
+],
+[
+"Wisconsin",
+"AA",
+3
+],
+[
+"Wyoming",
+"AA+",
+2
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataTableID16941ae57fb () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"AAA",
+1
+],
+[
+"AA+",
+2
+],
+[
+"AA",
+3
+],
+[
+"AA-",
+4
+],
+[
+"A+",
+5
+],
+[
+"A",
+6
+],
+[
+"A-",
+7
+],
+[
+"BBB+",
+8
+],
+[
+"BBB",
+9
+],
+[
+"BBB-",
+10
+],
+[
+"BB+",
+11
+] 
+];
+data.addColumn('string','rating');
+data.addColumn('number','ratingValue');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataTableID1691d12416d () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+"AA"
+],
+[
+"Alaska",
+"AA"
+],
+[
+"Arizona",
+"AA"
+],
+[
+"Arkansas",
+"AA"
+],
+[
+"California",
+"AA-"
+],
+[
+"Colorado",
+"AA"
+],
+[
+"Connecticut",
+"AA-"
+],
+[
+"Delaware",
+"AAA"
+],
+[
+"Florida",
+"AAA"
+],
+[
+"Georgia",
+"AAA"
+],
+[
+"Hawaii",
+"AA+"
+],
+[
+"Idaho",
+"AA+"
+],
+[
+"Illinois",
+"BBB-"
+],
+[
+"Indiana",
+"AAA"
+],
+[
+"Iowa",
+"AAA"
+],
+[
+"Kansas",
+"AA-"
+],
+[
+"Kentucky",
+"A+"
+],
+[
+"Louisiana",
+"AA"
+],
+[
+"Maine",
+"AA"
+],
+[
+"Maryland",
+"AAA"
+],
+[
+"Massachusetts",
+"AA+"
+],
+[
+"Michigan",
+"AA-"
+],
+[
+"Minnesota",
+"AA+"
+],
+[
+"Mississippi",
+"AA"
+],
+[
+"Missouri",
+"AAA"
+],
+[
+"Montana",
+"AA"
+],
+[
+"Nebraska",
+"AAA"
+],
+[
+"Nevada",
+"AA"
+],
+[
+"New Hampshire",
+"AA"
+],
+[
+"New Jersey",
+"A-"
+],
+[
+"New Mexico",
+"AA+"
+],
+[
+"New York",
+"AA+"
+],
+[
+"North Carolina",
+"AAA"
+],
+[
+"North Dakota",
+"AA+"
+],
+[
+"Ohio",
+"AA+"
+],
+[
+"Oklahoma",
+"AA+"
+],
+[
+"Oregon",
+"AA+"
+],
+[
+"Pennsylvania",
+"AA-"
+],
+[
+"Rhode Island",
+"AA"
+],
+[
+"South Carolina",
+"AA+"
+],
+[
+"South Dakota",
+"AAA"
+],
+[
+"Tennessee",
+"AAA"
+],
+[
+"Texas",
+"AAA"
+],
+[
+"Utah",
+"AAA"
+],
+[
+"Vermont",
+"AA+"
+],
+[
+"Virginia",
+"AAA"
+],
+[
+"Washington",
+"AA+"
+],
+[
+"West Virginia",
+"AA-"
+],
+[
+"Wisconsin",
+"AA"
+],
+[
+"Wyoming",
+"AA+"
+] 
+];
+data.addColumn('string','State');
+data.addColumn('string','rating');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataGeoChartID169572ad56d () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Alabama",
+67.2
+],
+[
+"Alaska",
+62.7
+],
+[
+"Arizona",
+60.4
+],
+[
+"Arkansas",
+76.9
+],
+[
+"California",
+69.8
+],
+[
+"Colorado",
+46
+],
+[
+"Connecticut",
+44.1
+],
+[
+"Delaware",
+81.1
+],
+[
+"District of Columbia",
+100.5
+],
+[
+"Florida",
+79.1
+],
+[
+"Georgia",
+75.8
+],
+[
+"Hawaii",
+54.7
+],
+[
+"Idaho",
+87.7
+],
+[
+"Illinois",
+35.6
+],
+[
+"Indiana",
+63
+],
+[
+"Iowa",
+81.6
+],
+[
+"Kansas",
+65.1
+],
+[
+"Kentucky",
+31.4
+],
+[
+"Louisiana",
+60.2
+],
+[
+"Maine",
+77.3
+],
+[
+"Maryland",
+64.9
+],
+[
+"Massachusetts",
+57.5
+],
+[
+"Michigan",
+64
+],
+[
+"Minnesota",
+53.2
+],
+[
+"Mississippi",
+60
+],
+[
+"Missouri",
+76.7
+],
+[
+"Montana",
+71.2
+],
+[
+"Nebraska",
+88.8
+],
+[
+"Nevada",
+72.3
+],
+[
+"New Hampshire",
+58.3
+],
+[
+"New Jersey",
+30.9
+],
+[
+"New Mexico",
+65.4
+],
+[
+"New York",
+94.5
+],
+[
+"North Carolina",
+88.3
+],
+[
+"North Dakota",
+65.9
+],
+[
+"Ohio",
+71
+],
+[
+"Oklahoma",
+71.9
+],
+[
+"Oregon",
+80.5
+],
+[
+"Pennsylvania",
+52.6
+],
+[
+"Rhode Island",
+55.3
+],
+[
+"South Carolina",
+53.8
+],
+[
+"South Dakota",
+96.9
+],
+[
+"Tennessee",
+95.9
+],
+[
+"Texas",
+73
+],
+[
+"Utah",
+86
+],
+[
+"Vermont",
+64.3
+],
+[
+"Virginia",
+72.4
+],
+[
+"Washington",
+84
+],
+[
+"West Virginia",
+72.1
+],
+[
+"Wisconsin",
+100
+],
+[
+"Wyoming",
+73.3
+] 
+];
+data.addColumn('string','state');
+data.addColumn('number','Funding.ratio.2016');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartGeoChartID169bc154ec() {
+var data = gvisDataGeoChartID169bc154ec();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID169bc154ec')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID16912d998d7() {
+var data = gvisDataGeoChartID16912d998d7();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID16912d998d7')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID1695e9ee919() {
+var data = gvisDataGeoChartID1695e9ee919();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID1695e9ee919')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID169f13d372() {
+var data = gvisDataGeoChartID169f13d372();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID169f13d372')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID1695d7c5a69() {
+var data = gvisDataGeoChartID1695d7c5a69();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID1695d7c5a69')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID169842dc0b() {
+var data = gvisDataGeoChartID169842dc0b();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID169842dc0b')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID1693d2213d0() {
+var data = gvisDataGeoChartID1693d2213d0();
+var options = {};
+options["width"] = 300;
+options["height"] = 200;
+options["region"] = "US";
+options["displayMode"] = "regions";
+options["colorAxis"] = {minValue: 0, maxValue: 11, colors:['green', 'red']};
+options["resolution"] = "provinces";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID1693d2213d0')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartTableID16941ae57fb() {
+var data = gvisDataTableID16941ae57fb();
+var options = {};
+options["allowHtml"] = true;
+
+
+    var chart = new google.visualization.Table(
+    document.getElementById('TableID16941ae57fb')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartTableID1691d12416d() {
+var data = gvisDataTableID1691d12416d();
+var options = {};
+options["allowHtml"] = true;
+
+
+    var chart = new google.visualization.Table(
+    document.getElementById('TableID1691d12416d')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartGeoChartID169572ad56d() {
+var data = gvisDataGeoChartID169572ad56d();
+var options = {};
+options["width"] = 600;
+options["height"] = 400;
+options["region"] = "US";
+options["diplayMode"] = "regions";
+options["colorAxis"] = {colors:['red', 'green']};
+options["resolution"] = "provinces";
+options["title"] = "PENSION DEFICIT as of 2016";
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID169572ad56d')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID169bc154ec);
+})();
+function displayChartGeoChartID169bc154ec() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID16912d998d7);
+})();
+function displayChartGeoChartID16912d998d7() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID1695e9ee919);
+})();
+function displayChartGeoChartID1695e9ee919() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID169f13d372);
+})();
+function displayChartGeoChartID169f13d372() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID1695d7c5a69);
+})();
+function displayChartGeoChartID1695d7c5a69() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID169842dc0b);
+})();
+function displayChartGeoChartID169842dc0b() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID1693d2213d0);
+})();
+function displayChartGeoChartID1693d2213d0() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "table";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartTableID16941ae57fb);
+})();
+function displayChartTableID16941ae57fb() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "table";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartTableID1691d12416d);
+})();
+function displayChartTableID1691d12416d() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID169572ad56d);
+})();
+function displayChartGeoChartID169572ad56d() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID169bc154ec"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID16912d998d7"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID1695e9ee919"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID169f13d372"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID1695d7c5a69"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID169842dc0b"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID1693d2213d0"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTableID16941ae57fb"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTableID1691d12416d"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID169572ad56d"></script>
+ 
+<table border="0">
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+<h2> 2005 -- Credit Ratings </h2>  
+<div id="GeoChartID169bc154ec" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+<h2> 2007 -- Credit Ratings </h2>    
+<div id="GeoChartID16912d998d7" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+<h2> 2009 -- Credit Ratings </h2>    
+<div id="GeoChartID1695e9ee919" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+<h2> 2011 -- Credit Ratings </h2>    
+<div id="GeoChartID169f13d372" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+<h2> 2013 -- Credit Ratings </h2>    
+<div id="GeoChartID1695d7c5a69" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+<h2> 2015 -- Credit Ratings </h2>    
+<div id="GeoChartID169842dc0b" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+<h2> 2017 -- Credit Ratings </h2>    
+<div id="GeoChartID1693d2213d0" 
+  style="width: 300; height: 200;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+<h3> Legend </h3>    
+<div id="TableID16941ae57fb" 
+  style="width: 500; height: automatic;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+<td>
+
+<!-- divChart -->
+<h2> 2017 S&P Credit Ratings </h2>  
+<div id="TableID1691d12416d" 
+  style="width: automatic; height: automatic;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<!-- divChart -->
+<p style="font-size:3vw"> 2016 -- Unfunded Pension Obligations</p>
+<div id="GeoChartID169572ad56d" 
+  style="width: 600; height: 400;">
+</div>
+
+</td>
+</tr>
+</table>
+ <div><span>Data: various &#8226; Chart ID: <a href="Chart_State of the States.html">State of the States</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.6.2</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.4.3 (2017-11-30) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; Data Policy: See individual charts
+</span></div>
+</body>
+</html>
